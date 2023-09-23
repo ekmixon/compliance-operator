@@ -8,7 +8,7 @@ require (
 	github.com/wI2L/jsondiff v0.4.0
 	k8s.io/apimachinery v0.28.2
 	k8s.io/client-go v0.28.2
-	sigs.k8s.io/controller-runtime v0.16.1
+	sigs.k8s.io/controller-runtime v0.16.2
 )
 
 require (
