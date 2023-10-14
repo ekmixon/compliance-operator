@@ -54,14 +54,14 @@ require (
 	github.com/prometheus/common v0.44.0 // indirect
 	github.com/prometheus/procfs v0.11.1 // indirect
 	github.com/robfig/cron/v3 v3.0.1
-	github.com/securego/gosec/v2 v2.17.0
+	github.com/securego/gosec/v2 v2.18.1
 	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/cobra v1.7.0
 	github.com/spf13/pflag v1.0.6-0.20210604193023-d5e0c0615ace // indirect
 	github.com/stretchr/testify v1.8.4
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.26.0
-	golang.org/x/mod v0.12.0
+	golang.org/x/mod v0.13.0
 	golang.org/x/net v0.17.0
 	golang.org/x/oauth2 v0.12.0 // indirect
 	golang.org/x/sys v0.13.0 // indirect
@@ -130,7 +130,7 @@ require (
 	github.com/xo/terminfo v0.0.0-20210125001918-ca9a967f8778 // indirect
 	go4.org v0.0.0-20200104003542-c7e774b10ea0 // indirect
 	golang.org/x/exp v0.0.0-20230510235704-dd950f8aeaea // indirect
-	golang.org/x/tools v0.12.0 // indirect
+	golang.org/x/tools v0.14.0 // indirect
 	k8s.io/kube-aggregator v0.28.2 // indirect
 	sigs.k8s.io/kube-storage-version-migrator v0.0.6-0.20230721195810-5c8923c5ff96 // indirect
 )
