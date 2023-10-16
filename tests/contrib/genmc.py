@@ -83,16 +83,16 @@ def main():
         mcindex = mcindex + args.start_num + 1
         mc = MC_TEMPLATE.format(ID=mcindex, DATA=content)
         if args.create:
-          p = Popen(['oc', 'create', '-f', '-'], stdout=PIPE, stdin=PIPE, stderr=PIPE)
-          stdout_data, stderr_data = p.communicate(input=bytes(mc, 'utf-8'))
-          print(stdout_data.decode().strip())
-          if len(stderr_data) > 0:
-            print(stderr_data.decode().strip())
+            p = Popen(['oc', 'create', '-f', '-'], stdout=PIPE, stdin=PIPE, stderr=PIPE)
+            stdout_data, stderr_data = p.communicate(input=bytes(mc, 'utf-8'))
+            print(stdout_data.decode().strip())
+            if len(stderr_data) > 0:
+              print(stderr_data.decode().strip())
         else:
-          #   write the template, add mcindex as suffix
-          outfile_name = args.out_file + "-" + str(mcindex) + ".yaml"
-          with open(outfile_name, "w") as outfile_contents :
-              outfile_contents.write(mc)
+                      #   write the template, add mcindex as suffix
+            outfile_name = f"{args.out_file}-{str(mcindex)}.yaml"
+            with open(outfile_name, "w") as outfile_contents :
+                outfile_contents.write(mc)
 
 if __name__ == "__main__":
     rv = main()
